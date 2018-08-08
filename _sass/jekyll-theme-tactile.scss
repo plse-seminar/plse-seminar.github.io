@@ -40,6 +40,11 @@ details summary::-webkit-details-marker {
   display:none;
 }
 
+/* Remove blue border around summary */
+summary {
+	outline:none;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
