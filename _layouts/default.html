@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+{% seo %}
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+        <header>
+          <h1>{{ site.title }}</h1>
+          <h2>{{ site.description }}</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+          <a href="#seminars" id="download-zip" class="button"><span>Seminars</span></a>
+          <a href="#calendar" id="download-tar-gz" class="button"><span>Calendar</span></a>
+          <a href="#mailinglist" id="download-tar-gz" class="button"><span>Mailing List</span></a>
+        </section>
+        <hr>
+        <section id="main_content">
+          <a name="seminars"><h2>Seminars</h2></a>
+          {{ content }}
+        </section>
+        <hr>
+        <section>
+          <a name="mailinglist"><h2>Mailing List</h2></a>
+        </section>
+        <hr>
+        <section>
+          <a name="calendar"><h2>Calendar</h2></a>
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=ualberta.ca_75u6fkv4q7lngh16vvprsujdek%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FEdmonton" style="border-width:0" width="100%" height="620px" frameborder="0" scrolling="no"></iframe>
+        </section>
+        <footer>
+        {% if site.github.is_project_page %}
+          {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
+        {% endif %}
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
