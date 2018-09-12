@@ -29,20 +29,24 @@ time, mark, audio, video {
 
 /* Setting the widths of various table columns */
 th.date {
-  width: 20%
+  width: 14%
 }
 th.presenter {
-  width: 20%
+  width: 24%
 }
 
 /* Remove the arrow from the details summary */
 details summary::-webkit-details-marker {
-  display:none;
+  display: none;
 }
 
 /* Remove blue border around summary */
 summary {
-	outline:none;
+	outline: none;
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -113,7 +117,7 @@ header h2 {
 }
 
 .inner {
-  width: 620px;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -173,19 +177,6 @@ a.button span {
   display: block;
   height: 23px;
   padding-left: 50px;
-}
-
-#download-zip span {
-  background: transparent url(../images/zip-icon.png) 12px 50% no-repeat;
-}
-#download-tar-gz span {
-  background: transparent url(../images/tar-gz-icon.png) 12px 50% no-repeat;
-}
-#view-on-github span {
-  background: transparent url(../images/octocat-icon.png) 12px 50% no-repeat;
-}
-#view-on-github {
-  margin-right: 0;
 }
 
 code, pre {

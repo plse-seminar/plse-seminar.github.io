@@ -1,23 +1,24 @@
 ---
 layout: default
 ---
+
 <table>
  <tr>
    <th class="date">Date</th>
    <th class="title">Seminar</th>
    <th class="presenter">Presenter</th>
  </tr>
-{% assign posts = site.posts | where: 'group',"seminars" | sort:'weight', 'last' %}
-{% for post in posts %}
+ {% assign talks = site.data.talks | sort: 'date' | reverse %}
+ {% for talk in talks %}
 <tr>
-  <td>{{ post.date | date: "%b %d, %Y" }}</td>
+  <td>{{ talk.date | date: "%b %d, %Y" }}</td>
   <td>
     <details>
-      <summary><a>{{ post.title }}</a></summary>
-      {{ post.content }}
+      <summary><a>{{ talk.title }}</a></summary>
+      {{ talk.abstract }}
     </details>
   </td>
-  <td>{{ post.presenter }}</td>
+  <td>{{ talk.presenter }}</td>
 </tr>
 {% endfor %}
 </table>
