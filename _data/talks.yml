@@ -1,3 +1,106 @@
+
+- id: aida-nonfun
+  title: Identifying Bugs Related to Non-Functional Requirements in Java and Python
+  presenter: Aida Radu
+  date: 2018-08-29 12:30:00
+  abstract: Non-functional requirements describe quality attributes of a program, such as performance and security. While several researchers have published bug datasets in the past, there has been little focus on bugs related to non-functional requirements. In this presentation, we introduce NFBugs, a dataset of 138 non-functional bug fixes collected from 67 open source projects. We describe the layout of the dataset and the methods used to construct it. Our dataset is publically available on GitHub to encourage expansion and analysis.
+
+- id: alex-delphi
+  title: Automated Management of Static Analysis Benchmarks
+  presenter: Alexander MacKenzie
+  date: 2018-08-29 12:30:00
+  abstract: The act of benchmarking of static analysis tools currently has some pitfalls. Projects used to benchmark these tools often must include certain features, such as specific statements or access patterns. The difficulty of finding appropriate projects means that developers of static analysis tools often handpick projects with these features for benchmarking, which is a time consuming process and limits how well benchmarking tests reflect real world applications of these tools. Together with our collaborators at the University of Paderborn and TU Darmstadt, we are currently developing a tool suite titled ABM (Automated Benchmark Management) to assist developers in constructing collections of projects with specific features. One component of ABM is Delphi, which scrapes open source projects off public repositories such as Maven Central, uses static analysis tools to generate a list of features included in these projects, saves the recorded features to an Elasticsearch database, and allows users to search for projects that include certain features.  This talk details the implementation of a component of Delphi that uses static analysis to record all methods in external libraries that are called by a given project, along with which libraries each method belongs to. To accomplish this, lists of external calls are generated for libraries hosted on Maven Central, then these external calls are mapped onto the libraries that define them and posted to the database. This database will then be accessed through either a web API or a CLI. Such a workflow will allow users to use Delphi to find open source projects that use certain libraries or methods of interest, and analyse real-world usages of these libraries without having to handpick a selection of projects that are known to use these libraries.
+
+- id: jacob-varcpp
+  title: Variability-Aware of C++ Code Using Clang
+  presenter: Jacob Reckhard
+  date: 2018-08-15 12:30:00
+  abstract: In the C family of languages, lexical preprocessors are prevalent as a method to introduce variation into code. While these lexical preprocessors facilitate portability and code reuse, they introduce additional complexity which can make it challenging for traditional tools to analyze code. Tool-based analysis is important to catch errors before the codebase becomes too dependent on the erroneous parts. One well known project for compilation and analysis of code is Clang. In this presentation, we describe the changes required to coerce Clang into conducting variability-aware analysis of C++ code. Varibility-aware analysis is a technique in which the code base is analysed for all possible configurations of the code. In the process we show a novel approach to conducting variability-aware parsing in a sound manner using an existing C++ parser that doesn't suffer from unnecessary exponential time growth.
+
+- id: erick-nix
+  title: How can Nix package manager help you with your research?
+  presenter: Erick Ochoa
+  date: 2018-08-15 12:00:00
+  abstract: Nix’s purely functional approach ensures that installing or upgrading one package cannot break other packages. This is because it won’t overwrite dependencies with newer versions that might cause breakage elsewhere. It allows you to roll back to previous versions, and ensures that no package is in an inconsistent state during an upgrade. Nix builds packages in isolation from each other. This ensures that they are reproducible and don’t have undeclared dependencies, so if a package works on one machine, it will also work on another. What does this mean for your research? Do you have multiple projects that use different versions of the same library? Do you want different developer environments for different projects? Do you want to specify dependencies at runtime? Accidentally <code>rm /</code> your machine and need to install your dependencies? Do you want to fully specify the environment in which your experiment runs? Do you want someone else to run your experiment easily?
+
+- id: kristen-crypto
+  title: Detecting Misuses of Crypto APIs
+  presenter: Kristen Newbury
+  date: 2018-08-01 12:00:00
+  abstract: Static analysis is an invaluable technique for approximating the runtime behaviour of programs. However, as an approximation, static analysis may not be able to eliminate consideration of code paths and states that will not be encountered during typical program execution. While over-approximation may not significantly impact performance when analyzing small applications, it may be difficult to achieve scalable performance of static analysis tools on codebases that are large or are comprised of (object oriented) languages with features such as dynamic dispatch. To be valuable to developers, modern static analysis tools must focus on simultaneously delivering soundness, precision, and speed. Analyses that leverage runtime information may be able to improve their performance by increasing the precision of their analysis. Application security is an area of computing that can benefit from program analysis. Many applications are required to securely deal with cryptographic tasks such as file encryption, password hashing, and storing and authenticating user logins. However, the average developer is not a cryptography expert, and, therefore, must rely on Application Programming Interfaces (APIs) to meet their applications' security needs. In spite of this modularity, it is still possible to use an API incorrectly, which may result in significant monetary loss and reputation damage to individuals and corporations. Program analysis tools such as Cognicrypt (an Eclipse plugin) have been developed specifically to aid developers with crypto API misuse detection.   This talk will look further into existing crypto API misuses detection technology as well as the motivations of investigating the integration of cryptography API misuse detection into a Just-in-Time context.
+
+- id: andrew-ibm
+  title: Compiler Development at IBM
+  presenter: Andrew Craik (IBM)
+  date: 2018-07-23 13:00:00
+  abstract: Over the last two years IBM has open-sourced its JVM implementation and the framework used to build that JVM through the Eclipse OpenJ9 and Eclipse OMR projects respectively. In this talk, I’ll give an overview of compiler development at IBM, the Eclipse OMR and Eclipse OpenJ9 projects, IBM’s open source approach to JVM development, and some of the areas of innovation in these projects. At the conclusion of this overview, I will take a deep dive into one of our current enhancement projects – JProfiling. JProfiling is an innovative software-based profiling framework which gathers high precision execution frequency and program value information with low overheads – preliminary evaluation suggests an overhead of approximately 30% throughput compared to existing techniques which incur overheads in excess of 80%.
+
+- id: samer-varcpp
+  title: Supporting Software Variability in C++
+  presenter: Samer Al Masri
+  date: 2018-07-18 13:00:00
+  abstract: As software becomes more common in our daily lives, software is now expected to have multiple features and work in different enviroments. One example is Eclipse OMR, a C++ library of language runtime components. OMR supports multiple architectures and various langages and hence it is considered a software family. Aiming to facilitate the development of software families in general and OMR more specifically, we created OMRStatistics, a static analysis tool that helps Eclipse OMR developers collect statistics about the project and make development decisions about variability. In this talk, I will be explaining the motivation behind OMRStatistics, what problems it contribute to solving, and the impact that we are aiming to obtain with the help of this tool.
+
+- id: rene-method1
+  title: A New Enterprise Software Paradigm
+  presenter: Rene Kohut (Method1)
+  date: 2018-07-04 13:00:00
+  abstract: Technology is advancing at incredible speeds but advancements in enterprise software implementation practices have been left behind. As a result, significant resource inefficiencies and subsequent negative economic impacts are becoming the norm. This presentation shares insights into industry related issues as observed by Method1 Enterprise Software and proposes a new paradigm aimed at making sweeping industry change.
+
+- id: ali-bugs
+  title: Thesaurus and Time Based Bug Assignment
+  presenter: Ali Sajedi
+  date: 2018-06-20 13:00:00
+  abstract: Bug-assignment, the task of ranking developers in terms of the relevance of their expertise to fix a new bug report is time consuming, which is why substantial attention has been paid to developing methods for automating it. In this talk, we describe our new bug-assignment approach that relies on two key intuitions. Similar to traditional bug-assignment methods, our method constructs the expertise profile of project developers, based on the textual elements of the bugs they have fixed in the past; unlike traditional methods, however, our method considers only the programming keywords in these bug descriptions, relying on Stack Overflow as the thesaurus for these keywords. The second key intuition of our method is that recent expertise is more relevant than past expertise, which is why our method weighs the relevance of a developer’s expertise based on how recently they have fixed a bug with keywords similar to the bug at hand. We evaluated our BA method using a data set of 93k bug-report assignments from thirteen popular Github projects and show that our method outperforms state-of-the-art methods.
+
+- id: rameel-cnns
+  title: Training Deep Convolutional Networks with Unlimited Synthesis of Musical Examples for Multiple Instrument Recognition
+  presenter: Rameel Sethi
+  date: 2018-06-06 13:00:00
+  abstract: Deep learning has been widely adopted in music information retrieval (MIR) after finding success in several other domains such as computer vision. However, content-based MIR often suffers from a lack of training data and/or labels, especially at the audio analysis frame level. This talk discusses one method of overcoming the scarcity of labeled recordings through generation of synthetic music compositions as training examples for deep convolutional networks applied to music classification. In particular, we investigate the MIR tasks of polyphony estimation and instrument recognition in polyphonic recordings where multiple instruments may be sounding simultaneously.
+
+- id: thierry-synopsys
+  title: "Static Analysis For Security: How Coverity Does It"
+  presenter: Thierry Lavoie (Synopsys)
+  date: 2018-05-23 13:00:00
+  abstract: Software security used to be the arcane knowledge of a selected few software engineers, and a distinct and optional part of the software development cycle. With the wide publicity given to vulnerabilities like Heartbleed, Cloudbleed, Meltdown, and Spectre, this once obscure domain has been made mundane. However, while public awareness of security issues has increased, their frequency and impact have not proportionally decreased. Many companies actively seek solutions to identify, address, and prevent security threats within their product. As a mature and market leading static analysis tool, Coverity is naturally suited to report and help in remediating security issues as part of the software development cycle. This talk will explain some of the techniques used by Coverity as well as its philosophical approach to static analysis as an industrial tool.
+
+- id: andrew-cisco
+  title: Advanced Malware Protection
+  presenter: Andrew Neitsch (Cisco)
+  date: 2018-04-11 13:00:00
+  abstract: "Cisco Systems has an engineering office in Calgary with more than 100 people building the Advanced Malware Protection product. This talk will give an introduction to the current computer security landscape; the universe of protection products; what AMP is; and some of the technical details and challenges of the specific work that the speaker does day-to-day: developing and supporting backend cloud data services that handle billions of requests per day."
+
+- id: susan-jobber
+  title: Why Style Matters
+  presenter: Susan Wright (Jobber)
+  date: 2018-03-28 13:00:00
+  abstract: A talk about coding style including real world examples, both good and bad. Learn how coding style can impact projects and collaboration, and uncover examples of tools that can be used to help enforce style guides. Finally, discover why a style guide isn’t written in stone and how adjustments can be made.
+
+- id: shaiful-greenscaler
+  title: "GreenScaler: Training Software Energy Models With Automatic Test Generation"
+  presenter: Shaiful Chowdhury
+  date: 2018-03-14 13:00:00
+  abstract: Software energy consumption is a performance related non-functional requirement that complicates building software on mobile devices today. Energy hogging applications (apps) are a liability to both the end-user and software developer. Measuring software energy consumption is non-trivial, requiring both equipment and expertise, yet researchers have found that software energy consumption can be modelled. Prior works have hinted that with more energy measurement data we can make more accurate energy models. This data, however, was expensive to extract because it required energy measurement of running test cases (rare) or time consuming manually written tests. We address these concerns by automatically generating test cases to drive apps undergoing energy measurement. Automatic test generation allows a model to be continuously improved in a model building process whereby apps are extracted, tests are generated, energy is measured and combined with instrumentation to train a model of software energy consumption. This continuous process has allowed the authors to generate and extract measurements from hundreds of apps in order to build accurate energy models capable of predicting the energy consumption of apps without end-user energy measurement. We clearly show that we can reduce energy modelling error of models built from more apps through this automatic test generation process. Also, the produced models are very accurate in detecting energy regression between versions of the same app. This is directly helpful for the app developers who want to know if a change in the source code, for example, is harmful for the total energy consumption.
+
+- id: jeff-swift
+  title: Enabling Swift analyses in WALA Generation
+  presenter: Jeff Cho
+  date: 2018-03-14 13:30:00
+  abstract: Swift, Apple's open-source programming language, is increasing in popularity and usage for creating applications for Apple platforms including iOS  and macOS.  However, the low-level LLVM-based tooling that Apple provides is not readily usable by researchers who conduct higher-level program analyses, and current research frameworks have little support for Swift applications, even though they provide extensive support for other platforms such as Android. The Swift-WALA project's goal is to enable the research and analysis of Swift applications using IBM's T.J. Watson Libraries for Analysis (WALA). The project has been part of the Undergraduate Capstone Open Source Project (UCOSP) for the past two semesters, working with students from across Canada who have built support for a number of basic instruction types. The presentation will discuss some of the technical details, approaches attempted, progress made, and challenges encountered thus far by the Swift-WALA team.
+
+- id: mehran-android
+  title: "The Android Update Problem: An Empirical Study"
+  presenter: Mehran Mahmoudi
+  date: 2018-02-28 13:00:00
+  abstract: Many phone vendors use Android as their underlying OS, but often extend it to add new functionality and to make it compatible with their specific phones. When a new version of Android is released, phone vendors need to merge or re-apply their customizations and changes to the new release. This is a difficult and time-consuming process, which often leads to late adoption of new versions. In this paper, we perform an empirical study to understand the nature of changes that phone vendors make, versus changes made in the original development of Android. By investigating the overlap of different changes, we also determine the possibility of having automated support for merging them. We develop a publicly available tool chain, based on a combination of existing tools, to study such changes and their overlap. As a proxy case study, we analyze the changes in the popular community-based variant of Android, LineageOS, and its corresponding Android versions. We investigate and report the common types of changes that occur in practice. Our findings show that 83% of subsystems modified by LineageOS are also modified in the next release of Android. By taking the nature of overlapping changes into account, we assess the feasibility of having automated tool support to help phone vendors with the Android update problem. Our results show that 56% of the changes in LineageOS have the potential to be safely automated.
+
+- id: ben-tasks
+  title: Creating Task-oriented Summaries of APIs from Crowdsourcing Websites
+  presenter: Benyamin Noori
+  date: 2018-02-14 13:00:00
+  abstract: Community crowdsourcing websites are a popular source of information for software developers. Stack Overflow, being a prominent online resource for programmers, hosts almost 15 million programming questions and answers. In this paper, we introduce a novel approach that uses the data gathered from Stack Overflow to build a task-oriented summary of a given software library. This summary can be used to help developers learn how to accomplish everyday tasks. We evaluate the usefulness of this approach using a survey of computer science students.
+
 - id: stephen-deepgreen
   title: "Deep Green: Modelling Time-Series of Software Energy Consumption"
   presenter: Stephen Romansky

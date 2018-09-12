@@ -28,11 +28,24 @@ time, mark, audio, video {
 }
 
 /* Setting the widths of various table columns */
-th.date {
-  width: 14%
+.date {
+	width: 15%;
+	text-align: right;
+	padding-right: 20px;
 }
+
+th.title {
+	padding-left: 3px;
+}
+
 th.presenter {
-  width: 24%
+  width: 25%;
+}
+
+td {
+	&:not(:last-child) {
+		padding-right: 20px;
+	}
 }
 
 /* Remove the arrow from the details summary */
