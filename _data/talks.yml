@@ -1,3 +1,8 @@
+- id: revan-ml-se
+  title: Fixing Machine Learning with Solver-aided Languages
+  presenter: Revan MacQueen
+  date: 2018-08-29 12:30:00
+  abstract: Machine learning has become increasingly ubiquitous in our modern world. Expanded computational power and more sophisticated algorithms have furthered the field to tackle an increasing variety of problems such as computer vision and predictive modeling. However, due to the complex nature of these algorithms, human understanding of the underlying processes of machine learning is limited. This discrepancy between human knowledge and the complexity of ML algorithms leads to a problem: when machine learning algorithms err, how do we fix them? As humans, adjusting the tens of thousands (or millions) of individual parameters in a neural network to correct poor performance is a seemingly impossible task due to the sheer size and  intricacy of these models. Our project is looking for a solution to this problem. We use SMT solvers to correct errors in machine learning prediction models, while maintaining the accuracy and generalization capacities of these models. In particular, we make use of the powerful solver-aided programming language Rosette to solve these complex optimization problems. Incredibly, Rosette is able to represent neural networks and their results as symbolic values, which can then be solved for under the assertion that a given data point is correct. Our goal is to be able to iteratively correct ML errors using this method. 
 
 - id: aida-nonfun
   title: Identifying Bugs Related to Non-Functional Requirements in Java and Python
