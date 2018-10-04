@@ -1,3 +1,9 @@
+- id: diego-vulkan
+  title: Graphics Shader Languages - Compilation Challenges
+  presenter: Diego Novillo (Google)
+  date: 2018-10-10 12:00:00
+  abstract: Graphics APIs have evolved in the last few years to the point where they require the presence of multiple levels of compilation, intermediate representations, and tools. This talk will provide an overview of graphics shader languages, intermediate representations, and the compilers used. The focus will be on the Vulkan ecosystem, challenges that need to be addressed, and the tools we are building to deal with them.
+
 - id: revan-ml-se
   title: Fixing Machine Learning with Solver-aided Languages
   presenter: Revan MacQueen
