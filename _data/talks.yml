@@ -1,3 +1,10 @@
+- id: karim-vul
+  title: "Is Program Analysis The Silver Bullet Against Software Bugs?"
+  presenter: Karim Ali
+  date: 2019-09-16 12:00:00
+  abstract: "Program analysis is the art of reasoning about the run-time behavior of a program without necessarily executing it. This information is useful for various real-life applications such as supporting software developers (e.g., bug-finding tools, code refactoring tools, and code recommenders) and compiler optimizations. Program analysis is also used to ensure complex software adheres to standards and regulations (e.g., medical devices, car industry, and aviation industry)."
+
+
 - id: shaiful-eng
   title: "GreenBundle: An Empirical Study on the Energy Impact of Bundled Processing"
   presenter: Shaiful Chowdhury
