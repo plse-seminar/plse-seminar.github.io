@@ -20,7 +20,9 @@
   title: "Is Program Analysis The Silver Bullet Against Software Bugs?"
   presenter: Karim Ali
   date: 2019-09-04 12:00:00
-  abstract: "Program analysis is the art of reasoning about the run-time behavior of a program without necessarily executing it. This information is useful for various real-life applications such as supporting software developers (e.g., bug-finding tools, code refactoring tools, and code recommenders) and compiler optimizations. Program analysis is also used to ensure complex software adheres to standards and regulations (e.g., medical devices, car industry, and aviation industry)."
+  abstract: "Program analysis is the art of reasoning about the run-time behavior of a program without necessarily executing it. This information is useful for various real-life applications such as supporting software developers (e.g., bug-finding tools, code refactoring tools, and code recommenders) and compiler optimizations. Program analysis is also used to ensure complex software adheres to standards and regulations (e.g., medical devices, car industry, and aviation industry).
+
+  In this talk, I will discuss the three main properties that enable program analyses to be useful in practice: scalability, precision, and usability. I will relate that to various papers that have been published in the field of program analysis, as well as some of the work that my group has done. I will conclude with where I see program analysis research going and the challenges that we aim to solve in the field."
 
 
 - id: shaiful-eng
@@ -73,7 +75,7 @@
 
 - id: kelvin-web
   title: (Semi)Automatic Construction of Access-Controlled Web Data Services
-  presenter: Kalvin Eng 
+  presenter: Kalvin Eng
   date: 2018-11-21 12:00:00
   abstract: "The widespread adoption of the Internet of Things (IoT) is producing an ever-increasing stream of data that can be mined by multiple stakeholders, in support of different objectives and tasks. In fact, we are witnessing the emergence of data marketplaces that aim to share this data and harness economic value out of these transactions. The advent of data-as-a-service (DaaS) represents a key integrator opportunity that allows for the management of data collections, while providing specific privacy policies to delegated agents. To support DaaS integrations, we develop a model-driven method for creating APIs to deliver DaaS. Our method supports data owners to: (1) automatically abstract the representation of relational database schemas into a visual model and map them to existing ontologies, (2) use the mappings in order to create different role-based access-control views of APIs, and (3) automatically generate API endpoints and their responses, based on these mappings. We develop a 'plug-and-play' prototype system for SQL databases to demonstrate this methodology and apply it to a use case of controlling data from a fitness monitoring application. Our aim is to enhance existing API creation methodologies that may be cumbersome by using semantics so that data can be easily shared and distributed."
 
