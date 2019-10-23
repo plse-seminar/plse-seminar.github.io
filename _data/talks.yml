@@ -1,3 +1,10 @@
+- id: hareeme-empirical
+  title: "Conclusion Stability of Defect Prediction Models"
+  presenter: Hareem Sahar
+  date: 2019-10-16 12:00:00
+  abstract: "Researchers in empirical software engineering like to make claims based on observable data such as defect reports. Unfortunately too often these researchers generalize too much and make claims that go beyond the datasets they evaluated. Will the researcher’s conclusions hold a year from now on for the same software projects? Perhaps not. Recent studies show that in the area of Software Analytics, most of the times conclusions over different datasets remain inconsistent. However, we are interested to investigate whether conclusions in the area of defect prediction actually are stable throughout time or not. Thus we apply a time-aware evaluation where by models are only trained on the past, and evaluations are executed only on the future. We show through this time-aware evaluation that depending on which time we evaluate defect predictors on, their performance varies and their results are inconsistent. The next release of a product could drastically change defect prediction performance. This implies that without conclusion stability empirical software engineering researchers should couch their claims of performance within the contexts of evaluation, as any researcher making broad claims about defect performance could be quickly contradicted by the next release of a product."
+
+
 - id: yourui-brain
   title: "Sound Relaxation: Sweet Spot Exploration in Soundscape using Reinforcement Learning"
   presenter: Yourui
