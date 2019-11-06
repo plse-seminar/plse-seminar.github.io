@@ -1,3 +1,19 @@
+
+
+- id: eddie-unnicode
+  title: "Advanced UNICODE"
+  presenter: Eddie Santos
+  date: 2019-09-18 12:00:00
+  abstract: "Unicode is a ubiquitous computing standard. From the world wide web, your favourite programming language’s string type, to the very abstract you are reading right now, Unicode is the most widespread standard used to represent and transmit text. Yet, as computing scientists, we often skip the lesson of what Unicode actually is, and how to use it appropriately. This talk introduces the scope of the Unicode standard, explains what a code point is, demystifies the difference between Unicode and UTF-8, and gives some practical tips for working with multilingual text."
+
+
+- id: henry-msr
+  title: "An Empirical Study of Crowd-sourced Answer Edits on Stack Overflow"
+  presenter: Henry Tang
+  date: 2019-09-18 12:00:00
+  abstract: "Comments on Stack Overflow provide an effective way for developers to point out problems with existing answers, alternative solutions, or warnings about pitfalls. Given its crowd-sourced nature, answers are often updated to incorporate the suggestions in these comments. In addition to shedding light on the kind of issues the community points out in the posted answers, matching comments to their corresponding edits can also provide valuable data to build code recommender systems. In this paper, we investigate the nature of comment-edit pairs on SO and their potential to be used for future recommender systems. We first design a technique to extract related comment-edit pairs and then qualitatively and quantitatively investigate the nature of these pairs. Our results show that there are 5 distinct categories a comment causing an edit belongs to. Examples of such categories are comments that mention an error in the answer such as exceptions raised when running the code, or comments that mention improvements such as conforming to best practices."
+
+
 - id: hareeme-empirical
   title: "Conclusion Stability of Defect Prediction Models"
   presenter: Hareem Sahar
