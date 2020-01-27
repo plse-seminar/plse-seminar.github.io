@@ -1,3 +1,15 @@
+- id: ifaz-reference
+  title: "Type Safety for Call-by-reference Languages"
+  presenter: Ifaz Kabir
+  date: 2020-01-27 12:00:00
+  abstract: "Most modern programming languages are call-by-reference where data structures are stored in a heap and references to these data structures are passed to functions. In this talk, we will discuss what type safety means and go through all the stages of the design progress of a small type safe call-by-reference language, including precisely describing a machine the programs of the language would run on, the operations of the language, and the infrastructure needed to prove the language is type safe."
+
+- id: gyan-database
+  title: "Towards Compressed and Queryable Structured Documents"
+  presenter: Gyan Tiwary
+  date: 2019-11-12 12:00:00
+  abstract: "RESTful web services are the de-facto standard for implementing web-based systems today, and the cornerstone of this technology is the exchange of ascii-based structured documents, adopting XML or JSON as the underlying syntax. These documents tend to be verbose, with much of their content resulting from the repetitive inclusion of their structure tags. XML compression has been an active area of research. In this presentation, we will review the various formulations of the XML-compression problem and we will discuss our own method that, in many scenarios, outperforms the state-of-the-art methods."
+
 - id: eddie-unnicode
   title: "Advanced UNICODE"
   presenter: Eddie Santos
