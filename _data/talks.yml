@@ -1,3 +1,33 @@
+- id: max-merging
+  title: "Refactoring-aware Merging: The Quest to Break the State of the Art"
+  presenter: Max
+  date: 2020-04-01 12:00:00
+  abstract: "Dealing with merge conflicts is one of the main challenges developers face while collaborating on model version control systems. The current software merging tools, integrated in modern version control systems, are typically text-based and do not understand the underlying code changes. As previous work shows, refactorings (software changes that may alter the syntax of the program but not its semantics) typically cause more complicated merge conflicts in git, even though they have the potential to be automatically resolved. We believe that an operation-based refactoring-aware merging approach has potential to resolve these conflicts. However, before implementing our proposed approach, we systematically evaluate a recently proposed refactoring-aware technique, IntelliMerge, to determine if the state of the art works properly. In this talk, we will talk about our results in terms of investigating IntelliMerge and the drawbacks we believe an operation-based approach may overcome."
+
+- id: batyr-omr
+  title: "Tackling Variability Implementation Challenges in Eclipse OMR"
+  presenter: Batyr Nuryyev
+  date: 2020-03-11 12:00:00
+  abstract: "Eclipse OMR is an open-source framework for building language runtimes. It supports a variety of operating systems and architectures, and consists of configurable C++ components such as a just-in-time (JIT) compiler, garbage collector, and pthread-like library. Due to its requirement for high runtime performance, OMR currently uses static polymorphism and extensible classes as its variability implementation mechanism. However, the mechanism poses design challenges to its simplicity and extensibility; for example, developers experience difficulties understanding the codebase as well as finding the precise location of extension points. Our work strives to improve OMR’s design in an incremental approach. First, we determine a list of core challenges through interviewing the developers that have used and/or contributed to OMR. Second, we explore the existing literature as well as other open-source software for potential solutions that may alleviate some or all of the challenges."
+
+- id: ifaz-type
+  title: "Type Safety for Call-by-reference Languages Part-2"
+  presenter: Ifaz Kabir
+  date: 2020-03-04 12:00:00
+  abstract: "Most modern programming languages are call-by-reference - data structures are stored in a heap and references to these data structures are passed to functions. In this talk, we will continue our discussion on the design process for call-by-reference languages. We will look at the operations that make a language unsafe and describe a type system to ensure safety."
+
+- id: ahmed-symbolic
+  title: "Testing and checking program equivalence using symbolic execution"
+  presenter: Ahmed Bashir
+  date: 2020-02-05 12:30:00
+  abstract: "Concrete execution of a program is to run the program on a specific set of inputs and to explore a single path of execution on each run. Symbolic execution aims to explore all possible execution paths of a program by using symbolic values for inputs instead of concrete ones. Symbolic execution can generate symbolic summaries which capture the effects of a program or a program component on the inputs. In this talk, we discuss how we can utilize symbolic execution to improve program testing and how to employ symbolic summaries to check for program equivalence."
+
+- id: sarah-so
+  title: " Essential Sentences for Navigating Stack Overflow Answers"
+  presenter: Sarah Nadi
+  date: 2020-02-05 12:00:00
+  abstract: "Stack Overflow (SO) has become an essential resource for software development. Despite its success and prevalence, navigating SO remains a challenge. Ideally, SO users could benefit from highlighted navigational cues that help them decide if an answer is relevant to their task and context. Such navigational cues could be in the form of essential sentences that help the searcher decide whether they want to read the answer or skip over it. In this work, we compare four potential approaches for identifying essential sentences. We adopt two existing approaches and develop two new approaches based on the idea that contextual information in a sentence (e.g., “if using windows”) could help identify essential sentences. We compare the four techniques using a survey of 43 participants. Our participants indicate that it is not always easy to figure out what the best solution for their specific problem is, given the options, and that they would indeed like to easily spot contextual information that may narrow down the search. Our quantitative comparison of the techniques shows that there is no single technique sufficient for identifying essential sentences that can serve as navigational cues, while our qualitative analysis shows that participants valued explanations and specific conditions, and did not value filler sentences or speculations. Our work sheds light on the importance of navigational cues, and our findings can be used to guide future research to find the best combination of techniques to identify such cues."
+
 - id: ifaz-reference
   title: "Type Safety for Call-by-reference Languages"
   presenter: Ifaz Kabir
